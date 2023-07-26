@@ -1,0 +1,21 @@
+<app-nav></app-nav>
+
+<body>
+   
+    <div class="clear"></div>
+    <h1 class="noticias">Ficcion</h1>
+
+    <div class="generos">
+
+        <div *ngFor="let peli of ficcion">
+            <img [src] = "peli.url">
+            <h3>Precio:{{peli.nombre}}</h3>
+            <a [routerLink]="[ '/fdetalles', peli.id]">Ver más</a> >
+          </div>
+          
+    </div>
+
+</body>
+
+
+<app-footer></app-footer>
